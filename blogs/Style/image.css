@@ -1,0 +1,11 @@
+.padding
+{
+width:20px;
+height:400px;
+padding: 50px;
+}
+.img
+{
+    padding-bottom: 50px;
+    border: 5px solid rgb(0, 0, 0);
+}

@@ -1,0 +1,79 @@
+body {
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap"
+    font-family: Garamond;
+    padding: 20px;
+    background: #000000;
+  }
+  
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: #1de9b6;
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Right column */
+  .rightcolumn {
+    float: right;
+    width: 20%;
+    padding-left: 10px;
+  }
+  
+  /* Fake image */
+  .img {
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    padding: 0px;
+  }
+  
+  /* Add a card effect for articles */
+  .card {
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .desc{
+    padding-left: 20px;
+  }
+
+ .card2{
+  position:absolute; 
+  top:790px; 
+  right:125px; 
+  display: flex; 
+  border: solid 2px; 
+  color: #00e5ff; 
+  width: 23%; 
+  font-size:20px;
+  text-align: center;
+  box-shadow: 0px 0px 20px #00a2ff;
+ }
+
+ .img2{
+  border:2px solid #ffffff;
+ }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+      width: 100%;
+      padding: 0;
+    }
+  }
