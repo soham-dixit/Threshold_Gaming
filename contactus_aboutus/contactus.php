@@ -182,29 +182,29 @@
 
 				<label class="label-input100" for="first-name">Tell us your name</label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name">
+					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name" required>
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" name="last-name" placeholder="Last name">
+					<input class="input100" type="text" name="last-name" placeholder="Last name" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">Enter your email</label>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: example@email.com">
-					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com">
+					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="phone">Enter phone number</label>
 				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +91 1234567890">
+					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +91 1234567890" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="message">Message</label>
 				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="How Can We Help You?"></textarea>
+					<textarea id="message" class="input100" name="message" placeholder="How Can We Help You?" required></textarea>
 					<span class="focus-input100"></span>
 				</div>
 
