@@ -1,25 +1,5 @@
 
-<?php
 
-if($_POST["submit"]) {
-    $recipient="himalli176@gmail.com";
-    $subject="Form to email message";
-    $sender=$_POST["sender"];
-    $senderln=$_POST["senderln"];
-    $senderEmail=$_POST["senderEmail"];
-    $message=$_POST["message"];
-    $senderPhone=$_POST["phone"];
-    
-
-    $mailBody="Name: $sender $senderln \n Email: $senderEmail\n Phone: $phone \n$message";
-
-    mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
-
-    echo "Message has been sent!";
-   // $thankYou="<p>Thank you! Your message has been sent.</p>";
-}
-
-?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -196,31 +176,30 @@ if($_POST["submit"]) {
 <div class="fadeIn">		
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form class="contact100-form validate-form">
-<!--
+			<form action="contactus.php" method="post" class="contact100-form validate-form">
 				<span class="contact100-form-title">
 					Ping Us!
 				</span>
 
 				<label class="label-input100" for="first-name">Tell us your name</label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="first-name" placeholder="First name" required>
+					<input id="first-name" class="input100" type="text" name="sender" placeholder="First name" required>
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" name="last-name" placeholder="Last name" required>
+					<input class="input100" type="text" placeholder="Last name" name="senderln" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">Enter your email</label>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: example@email.com">
-					<input id="email" class="input100" type="text" name="email" placeholder="Eg. example@email.com" required>
+					<input id="email" class="input100" type="text" name="senderEmail" placeholder="Eg. example@email.com" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="phone">Enter phone number</label>
 				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +91 1234567890">
+					<input id="phone" class="input100" type="text" name="senderPhone" placeholder="Eg. +91 1234567890">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -229,19 +208,13 @@ if($_POST["submit"]) {
 					<textarea id="message" class="input100" name="message" placeholder="How Can We Help You?" required></textarea>
 					<span class="focus-input100"></span>
 				</div>
--->
 
 				<div class="container-contact100-form-btn">
 					<button  class="btn btn-primary d-inline-flex flex-row" type="submit" name="submit">
 						<i class="fa fa-paper-plane"></i>Send Message
 					</button>
 				</div>
-<!--
-                     <div class="col-sm-4" style="margin:150px;">
-         <?php echo $thankYou; ?>
-
-        </div>
--->
+                
 			</form>
 
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
