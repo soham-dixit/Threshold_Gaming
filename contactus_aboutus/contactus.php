@@ -1,8 +1,7 @@
-
 <?php
 
 if($_POST["submit"]) {
-    $recipient="himalli176@gmail.com";
+    $recipient="thresholdgaminghelp@gmail.com";
     $subject="Form to email message";
     $sender=$_POST["sender"];
     $senderln=$_POST["senderln"];
@@ -15,11 +14,11 @@ if($_POST["submit"]) {
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
 
-    echo "Message has been sent!";
-   // $thankYou="<p>Thank you! Your message has been sent.</p>";
+   //echo "Message has been sent!";
+   $thankyou="<p>Thank you! Your message has been sent.</p>";
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -197,7 +196,7 @@ if($_POST["submit"]) {
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
-<!--
+                                <!--
 				<span class="contact100-form-title">
 					Ping Us!
 				</span>
@@ -231,17 +230,18 @@ if($_POST["submit"]) {
 				</div>
 -->
 
-				<div class="container-contact100-form-btn">
-					<button  class="btn btn-primary d-inline-flex flex-row" type="submit" name="submit">
-						<i class="fa fa-paper-plane"></i>Send Message
-					</button>
-				</div>
-<!--
-                     <div class="col-sm-4" style="margin:150px;">
-         <?php echo $thankYou; ?>
+                     <div>
+	<font size="5">
+         <?php
+		 echo '<img src="images\tickmark.png" width="70%" height="50%" align="center" style="margin-left:70px;"/>';
+		 echo "<p><br><br><br><br><br><br>Thank you!<br>
+                          Your message has been sent. We'll reply shortly.</p>"; 
+		?>
 
         </div>
--->
+</font>
+
+
 			</form>
 
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
