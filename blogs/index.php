@@ -78,6 +78,14 @@ cursor : url(../landing_page/cursors/swordcursor2.png), default !important;
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a
+                  class="nav-link page-scroll d-flex flex-row align-items-center text-primary"
+                  href="../landing_page/loading.php"
+                >
+                  Home
+                </a>
+              </li>
               <li class="nav-item">
                 <a
                   class="nav-link page-scroll d-flex flex-row align-items-center text-primary"
@@ -94,7 +102,7 @@ cursor : url(../landing_page/cursors/swordcursor2.png), default !important;
                   Tournaments
                 </a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <a
                   class="nav-link page-scroll d-flex flex-row align-items-center text-primary"
                   href="../blogs/loading.php"

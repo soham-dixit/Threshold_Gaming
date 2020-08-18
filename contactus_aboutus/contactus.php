@@ -124,6 +124,14 @@ if($_POST["submit"]) {
   
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 			  <ul class="navbar-nav ml-auto">
+			  <li class="nav-item">
+                <a
+                  class="nav-link page-scroll d-flex flex-row align-items-center text-primary"
+                  href="../landing_page/loading.php"
+                >
+                  Home
+                </a>
+              </li>
 				<li class="nav-item">
 				  <a
 					class="nav-link page-scroll d-flex flex-row align-items-center text-primary"
@@ -339,7 +347,7 @@ if($_POST["submit"]) {
 	  <center><a href="#">Donate us!</a></center>
 	  <div class="row mt-2">
 		<div class="col-12 text-muted text-center small-xl">
-		  &copy; 2020 <a href="index.html">Gaming Community</a> - All Rights Reserved
+		  &copy; 2020 <a href="index.html">Threshold Gaming</a> - All Rights Reserved
 		</div>
 	  </div>
 	</div>
