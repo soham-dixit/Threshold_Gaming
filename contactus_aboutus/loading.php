@@ -16,7 +16,7 @@
     });
     // location.replace("index.html");
     setTimeout(function () {
-      location.replace("contactus.php");
+      location.replace("contactus.html");
     }, 2000);
   </script>
 </html>
