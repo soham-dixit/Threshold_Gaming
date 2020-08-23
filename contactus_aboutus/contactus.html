@@ -182,30 +182,30 @@
 <div class="fadeIn">		
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form action="contactus.php" method="POST" class="contact100-form validate-form">
+			<form action="contactus.php" method="POST" class="contact100-form validate-form" id="myForm">
 				<span class="contact100-form-title">
 					Ping Us!
 				</span>
 
 				<label class="label-input100" for="first-name">Tell us your name</label>
 				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input id="first-name" class="input100" type="text" name="sender" placeholder="First name" required>
+					<input id="sender" class="input100" type="text" name="sender" placeholder="First name" required>
 					<span class="focus-input100"></span>
 				</div>
 				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" placeholder="Last name" name="senderln" required>
+					<input id="senderln" class="input100" type="text" placeholder="Last name" name="senderln" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="email">Enter your email</label>
 				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: example@email.com">
-					<input id="email" class="input100" type="email" name="senderEmail" placeholder="Eg. example@email.com" required>
+					<input id="senderEmail" class="input100" type="email" name="senderEmail" placeholder="Eg. example@email.com" required>
 					<span class="focus-input100"></span>
 				</div>
 
 				<label class="label-input100" for="phone">Enter phone number</label>
 				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="senderPhone" placeholder="Eg. +91 1234567890">
+					<input id="senderPhone" class="input100" type="text" name="senderPhone" placeholder="Eg. +91 1234567890">
 					<span class="focus-input100"></span>
 				</div>
 
@@ -216,7 +216,7 @@
 				</div>
 
 				<div class="container-contact100-form-btn">
-					<button  class="btn btn-primary d-inline-flex flex-row submit" type="submit" name="submit">
+					<button  class="btn btn-primary d-inline-flex flex-row submit" type="submit" name="submit" onclick="sendEmail()">
 						<i class="fa fa-paper-plane"></i>Send Message
 					</button>
 				</div>
@@ -345,6 +345,7 @@
   
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
@@ -353,4 +354,45 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
   <script src="js/mario.js"></script>
+  
+  <script type="text/javascript">
+  function sendEmail(){
+  var sender = $("#sender");
+  var senderln = $("#senderln");
+  var senderPhone = $("#senderPhone");
+  var senderEmail = $("#senderEmail");
+  var message = $("#message");
+
+  if(isNotEmpty(sender) && isNotEmpty(senderln) && isNotEmpty(senderEmail) && isNotEmpty(senderPhone) && isNotEmpty(message))
+  {
+  	$.ajax({
+	  	url: 'contactus.php',
+		method: 'POST',
+		dataType: 'json',
+		data:
+		{
+			sender: sender.val(),
+			senderln: senderln.val(),
+			senderEmail: senderEmail.val
+ 			senderPhone: senderPhone.val(),
+			message: message.val()
+		}, success: function(response){
+						    $('#myForm')[0].reset();
+					       }
+});
+}
+}
+function isNotEmpty(caller){
+if(caller.val()== "")
+{
+	caller.css('border','1 px solid red');
+	return false;
+}
+else
+{
+	caller.css('border','');
+	return true;
+}
+}
+</script>
   </html>

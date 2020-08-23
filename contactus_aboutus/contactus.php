@@ -1,4 +1,5 @@
 <?php
+use PHPMailer\PHPMailer\PHPMailer;
 
 if($_POST["submit"]) {
     $recipient="thresholdgaminghelp@gmail.com";
@@ -9,13 +10,38 @@ if($_POST["submit"]) {
     $message=$_POST["message"];
     $senderPhone=$_POST["phone"];
     
-
-    $mailBody="Name: $sender $senderln \n Email: $senderEmail\n Phone: $phone \n$message";
+    require_once "PHPMailer/PHPMailer.php";
+require_once "PHPMailer/Exception.php";
+require_once "PHPMailer/SMTP.php";
 
     mail($recipient, $subject, $mailBody, "From: $sender <$senderEmail>");
+	 
+	$mail = new PHPMailer();
+$mail -> isSMTP();
+$mail -> Host = "smtp.gmail.com";
+$mail -> SMTPAuth= true;
+$mail -> Username = "thresholdgaminghelp@gamil.com";
+$mail -> Password = 'webdev@project';
+$mail -> Port = 465;
+$mail -> SMTPSecure = "ssl";
 
-   //echo "Message has been sent!";
-   $thankyou="<p>Thank you! Your message has been sent.</p>";
+$mail->isHTML(true);
+$mail->setFrom($senderEmail, $sender);
+$mail->addAddress("thresholdgaminghelp@gmail.com");
+$mail->Subject = ("$senderEmail ($phone));
+$mail->Body =  $sender $senderln $senderEmail $phone \n$message;
+
+if($mail->send()){
+	$status = "success";
+	$response = "Your message has been sent.";
+}
+else{
+	$status = "failed";
+	$response = "Something went wrong!<br>"; . $mail -> ErrorInfo;
+}
+
+exit(json_encode(array("status" => $status, "response" => $response)));
+
 }
 ?>
 
@@ -200,7 +226,7 @@ if($_POST["submit"]) {
 		</div>
 	  </div>
     </section>
-<div class="fadeIn">		
+<div class="fadeIn" id="emailSent">		
 	<div class="container-contact100">
 		<div class="wrap-contact100">
 			<form class="contact100-form validate-form">
@@ -214,9 +240,7 @@ if($_POST["submit"]) {
 
         </div>
 </font>
-
-
-			</form>
+		 </form>
 
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
 				<div class="flex-w size1 p-b-47">
