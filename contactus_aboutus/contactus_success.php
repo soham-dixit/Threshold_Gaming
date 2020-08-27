@@ -1,4 +1,3 @@
-<?php ?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -180,50 +179,20 @@
 		</div>
 	  </div>
     </section>
-<div class="fadeIn">		
+<div class="fadeIn" id="emailSent">		
 	<div class="container-contact100">
 		<div class="wrap-contact100">
-			<form role="form" action="sendEmail.php" method="post" class="contact100-form validate-form" id="myForm">
-				<span class="contact100-form-title">
-					Ping Us!
-				</span>
-
-				<label class="label-input100" for="first-name">Tell us your name</label>
-				<div class="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type first name">
-					<input class="input100" type="text" name="name" placeholder="First name" required>
-					<span class="focus-input100"></span>
-				</div>
-				<div class="wrap-input100 rs2-wrap-input100 validate-input" data-validate="Type last name">
-					<input class="input100" type="text" placeholder="Last name" name="lname" required>
-					<span class="focus-input100"></span>
-				</div>
-
-				<label class="label-input100" for="email">Enter your email</label>
-				<div class="wrap-input100 validate-input" data-validate = "Valid email is required: example@email.com">
-					<input class="input100" type="email" name="email" placeholder="Eg. example@email.com" required>
-					<span class="focus-input100"></span>
-				</div>
-
-				<label class="label-input100" for="phone">Enter phone number</label>
-				<div class="wrap-input100">
-					<input id="phone" class="input100" type="text" name="phone" placeholder="Eg. +91 1234567890">
-					<span class="focus-input100"></span>
-				</div>
-
-				<label class="label-input100" for="message">Message</label>
-				<div class="wrap-input100 validate-input" data-validate = "Message is required">
-					<textarea id="message" class="input100" name="message" placeholder="How Can We Help You?" required></textarea>
-					<span class="focus-input100"></span>
-				</div>
-
-				<div class="container-contact100-form-btn">
-					<button  class="btn btn-primary d-inline-flex flex-row submit" type="submit" name="submit">
-						<i class="fa fa-paper-plane"></i>Send Message
-					</button>
-				</div>
-                
-			</form>
-
+			<form class="contact100-form validate-form">
+				<font size="5">
+        <div>
+		 <?php
+		 echo '<img src = "images/tickmark.png" alt="Image not found." style="width:70%;height:50%;margin-right:625px;margin-top:50">';
+		 echo "<p><br><br><br><br><br><br>Thank you!<br>
+                        Your message has been sent. We'll reply shortly.</p>"; 
+		?>
+        </div>
+	</form>
+</font>
 			<div class="contact100-more flex-col-c-m" style="background-image: url('images/bg-01.jpg');">
 				<div class="flex-w size1 p-b-47">
 					<div class="txt1 p-r-25">
@@ -249,7 +218,6 @@
 						<span class="txt1 p-b-20">
 							Let's Talk Over Call
 						</span>
-
 						<span class="txt3">
 							<a href="tel:+917506699134">
 							+91 7506699134</a>
@@ -346,7 +314,6 @@
   
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.7.3/feather.min.js"></script>
@@ -355,45 +322,4 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
   <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
   <script src="js/mario.js"></script>
-  
-  <script type="text/javascript">
-  function sendEmail(){
-  var sender = $("#sender");
-  var senderln = $("#senderln");
-  var senderPhone = $("#senderPhone");
-  var senderEmail = $("#senderEmail");
-  var message = $("#message");
-
-  if(isNotEmpty(sender) && isNotEmpty(senderln) && isNotEmpty(senderEmail) && isNotEmpty(senderPhone) && isNotEmpty(message))
-  {
-  	$.ajax({
-	  	url: 'test.php',
-		method: 'POST',
-		dataType: 'json',
-		data:
-		{
-			sender: sender.val(),
-			senderln: senderln.val(),
-			senderEmail: senderEmail.val
- 			senderPhone: senderPhone.val(),
-			message: message.val()
-		}, success: function(response){
-						    $('#myForm')[0].reset();
-					       }
-});
-}
-}
-function isNotEmpty(caller){
-if(caller.val()== "")
-{
-	caller.css('border','1 px solid red');
-	return false;
-}
-else
-{
-	caller.css('border','');
-	return true;
-}
-}
-</script>
   </html>
