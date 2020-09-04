@@ -182,7 +182,7 @@
                 Know About Us
               </h1>
               <p class="lead py-3">
-                A group of young gamers which built a platform for the whole community to gather and play together.
+                A group of young students which built a platform for the whole gaming community to gather and play together.
               </p>
             </div>
           </div>
@@ -270,7 +270,7 @@
     <div class="zoomer">
      <div class="w3-content w3-justify w3-padding-32" id="about"  data-center-center="opacity:1;bottom:0;" data-0-bottom="opacity:0;bottom:-200px;">
     <h2>About Us</h2>
-    <p>We are a group of young gamers which felt an urge to do something for the whole community. Thus we decided to make this website for the betterment of the gaming community. We believe that in this way we will be able to provide a specific platform for all the gamers throughout the globe.  
+    <p>   Threshold Gaming is owned by students who are tech enthusiasts. Apart from being tech-enthusiasts, we are gamers too. As young gamers, we wanted people or a group of gamers to create a forum, a community, a dedicated platform for us. We gave the idea some second thoughts and made the forum ourself. We made this so that all of the gamers worldwide could connect with each other, showcase their skills in the tournaments arranged by us, answer each other's queries through our page and read blogs, especially written by our developers about every recent gaming related event happening around the country. We, at Threshold Gaming, provide you a list of Discord servers of all the tredning games for all the players to connect and join easily without even taking the effort of searching for them. 
     </p>
      </div>
   </div>  
