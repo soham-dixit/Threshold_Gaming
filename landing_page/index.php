@@ -2,6 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <!-- Favicon -->
+  <link rel='icon' href='logo.png' type='image/png'/>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -105,9 +107,9 @@ cursor : url(cursors/swordcursor2.png), default !important;
           </form>
           </div>
 
-          <div class="container-mario">
+          <!-- <div class="container-mario">
             <canvas class="illo"></canvas>
-          </div>
+          </div> -->
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
