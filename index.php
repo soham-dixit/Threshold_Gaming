@@ -1,3 +1,1 @@
-<?php
-require 'landing_page/loading.php';
-?>
+<?php header("Location: landing_page/loading.php"); ?>
