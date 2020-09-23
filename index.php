@@ -1,3 +1,3 @@
 <?php
-require '/landing_page/loading.php';
+require 'landing_page/loading.php';
 ?>
