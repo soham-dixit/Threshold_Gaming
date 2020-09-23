@@ -4,6 +4,8 @@
   <title>Threshold Gaming - About us</title>
     <link rel="stylesheet" href="aboutloading.css" />
   </head>
+        <!-- Favicon -->
+        <link rel='icon' href='../landing_page/logo.png' type='image/png'/>
   <body>
     <div class="loader">
       <img src="pac.gif" width="30%" class="center" />

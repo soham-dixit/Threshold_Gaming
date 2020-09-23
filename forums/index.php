@@ -7,6 +7,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>Threshold Gaming - Community</title>
+    <!-- Favicon -->
+  <link rel='icon' href='../landing_page/logo.png' type='image/png'/>
     <meta name="description" content="Built for Gamers by Gamers" />
 
     <!--Inter UI font-->

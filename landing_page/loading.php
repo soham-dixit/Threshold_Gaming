@@ -3,6 +3,8 @@
   <head>
   <title>Threshold Gaming</title>
     <link rel="stylesheet" href="Style/style.css" />
+      <!-- Favicon -->
+  <link rel='icon' href='logo.png' type='image/png'/>
   </head>
   <body>
     <div class="loader">

@@ -9,6 +9,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+          <!-- Favicon -->
+  <link rel='icon' href='../landing_page/logo.png' type='image/png'/>
     <title>Threshold Gaming - Blogs</title>
     <meta name="description" content="Built for Gamers by Gamers" />
 

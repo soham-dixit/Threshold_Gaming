@@ -3,6 +3,8 @@
   <head>
   <title>Threshold Gaming - Sign in</title>
     <link rel="stylesheet" href="loading.css" />
+    <!-- Favicon -->
+  <link rel='icon' href='../landing_page/logo.png' type='image/png'/>
   </head>
   <body>
     <div class="loader">
