@@ -99,9 +99,9 @@
 			</form>
 			</div>
   
-			<div class="container-mario">
+			<!-- <div class="container-mario">
 			  <canvas class="illo"></canvas>
-			</div>
+			</div> -->
   
 			<div class="collapse navbar-collapse" id="navbarCollapse">
 			  <ul class="navbar-nav ml-auto">
@@ -190,7 +190,7 @@
 		 <?php
 		 echo '<img src = "images/tickmark.png" alt="Image not found." style="width:70%;height:50%;margin-right:625px;margin-top:50">';
 		 echo "<p><br><br><br><br><br><br>Thank you!<br>
-                        Your message has been sent. We'll reply shortly.</p>"; 
+                        Your message has been sent.</p>"; 
 		?>
         </div>
 	</form>
@@ -222,7 +222,7 @@
 						</span>
 						<span class="txt3">
 							<a href="tel:+917506699134">
-							+91 7506699134</a>
+							+91 9988776655</a>
 						</span>
 					</div>
 				</div>
