@@ -106,9 +106,9 @@
           </form>
           </div>
 
-          <div class="container-mario">
+          <!-- <div class="container-mario">
             <canvas class="illo"></canvas>
-          </div>
+          </div> -->
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav ml-auto">
