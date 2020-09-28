@@ -60,10 +60,10 @@ cursor : url(cursors/swordcursor2.png), default !important;
   </head>
 
   <body>
-    <!-- <video autoplay muted loop id="myVideo">
+    <video autoplay muted loop id="myVideo">
       <source src="css/bgvideogames.mp4" type="video/mp4">
       Your browser does not support HTML5 video.
-    </video> -->
+    </video>
     <cursor>
       <!-- <img src="pubg1.jpg" style="top: 100%; left: 0px; height: 20%; width: 100%;">  -->
     <!-- <div id="loader">
