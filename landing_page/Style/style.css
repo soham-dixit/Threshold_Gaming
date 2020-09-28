@@ -4,8 +4,8 @@ body {
   background-color: #12173a;
 }
 #loader {
-  height: auto;
-  width: 100%;
+  height: auto !important;
+  width: 100% !important;
   background-color: #12173a;
   position: fixed;
   top: 50%;
