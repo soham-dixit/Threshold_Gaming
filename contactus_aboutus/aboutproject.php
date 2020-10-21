@@ -81,7 +81,7 @@
       <div class="container-fluid">
         <div class="navbar navbar-expand-md navbar-dark">
           <a class="navbar-brand heading-black" href="../landing_page/loading.php">
-            LOGO
+          <img src="logo.png" style="max-width: 100px;"></img>
           </a>
 
           <button
