@@ -76,7 +76,7 @@ cursor : url(cursors/swordcursor2.png), default !important;
       <div class="container-fluid">
         <div class="navbar navbar-expand-md navbar-dark">
           <a class="navbar-brand heading-black" href="loading.php">
-            LOGO
+          <img src="logo.png" style="max-width: 100px;"></img>
           </a>
 
           <button

@@ -64,7 +64,7 @@
                     <div class="container-fluid">
                         <div class="navbar navbar-expand-md navbar-dark">
                             <a class="navbar-brand heading-black" href="../landing_page/loading.php">
-            LOGO
+                            <img src="logo.png" style="max-width: 100px;"></img>
           </a>
 
                             <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
