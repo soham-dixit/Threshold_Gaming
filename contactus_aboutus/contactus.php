@@ -253,12 +253,11 @@
 						</span>
 
 						<span class="txt3">
-							<a href="tel:+917506699134">
+							<a href="tel:+919988776655">
 							+91 9988776655</a>
 						</span>
 					</div>
 				</div>
-
 				<div class="dis-flex size1 p-b-47">
 					<div class="txt1 p-r-25">
 						<span class="lnr lnr-envelope"></span>
