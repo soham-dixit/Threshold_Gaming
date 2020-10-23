@@ -221,7 +221,7 @@
 							Let's Talk Over Call
 						</span>
 						<span class="txt3">
-							<a href="tel:+917506699134">
+							<a href="tel:+919988667755">
 							+91 9988776655</a>
 						</span>
 					</div>
