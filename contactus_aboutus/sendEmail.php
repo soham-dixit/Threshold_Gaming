@@ -24,7 +24,7 @@ if(isset($_POST['submit'])){
     $mail->SMTPAuth = true;           
   
     $mail->Username = "mailerforthresholdgaming@gmail.com";                 
-    $mail->Password = "webdev@project";  
+    $mail->Password = "mailer123*";  
 
     $mail->SMTPSecure = "tls";      
 
@@ -37,7 +37,7 @@ if(isset($_POST['submit'])){
 
     $mail->isHTML(true);
 
-    $mail->Subject = "A message from $name $lname";
+    $mail->Subject = "A message from: " . $name . " " . $lname;
     $mail->Body = "<i>Sender E-Mail address: $email <br><br> Message: $message <br><br>Phone number: $phone</i>";
 
     try {
